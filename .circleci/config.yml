@@ -74,7 +74,7 @@ jobs:
             XDEBUG_MODE: coverage
       - run:
           name: "Run tests"
-          command: php ./vendor/bin/phpunit -c phpunit.xml.dist
+          command: php ./vendor/bin/phpunit -c phpunit.xml.dist && php vendor/bin/php-coveralls
           environment:
             XDEBUG_MODE: coverage
 
